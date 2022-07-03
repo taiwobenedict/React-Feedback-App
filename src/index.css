@@ -1,0 +1,153 @@
+.active {
+  color: green; }
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-family: cursive;
+  line-height: 1.2;
+  background-color: #333;
+  color: #fff;
+  position: relative; }
+
+.header {
+  text-align: center;
+  color: coral;
+  background-color: #222;
+  padding: 0.7em;
+  position: sticky;
+  top: 0px;
+  z-index: 1000; }
+
+.container {
+  width: 90%;
+  max-width: 50rem;
+  margin-inline: auto; }
+
+.feedback-stat {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 1em 0 2em 0; }
+
+.card {
+  background-color: #fff;
+  color: #333;
+  border-radius: 10px;
+  position: relative;
+  padding: 2em;
+  margin: 1em 0;
+  max-width: 25em;
+  margin-inline: auto; }
+  .card .rating {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    font-size: 19px;
+    border: 1px solid #eee;
+    top: -10px;
+    left: -10px;
+    background-color: coral;
+    color: #fff;
+    border-radius: 50%;
+    text-align: center; }
+  .card .del-btn, .card .edit-btn {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    color: coral;
+    position: absolute;
+    top: 10px;
+    right: 10px; }
+  .card .edit-btn {
+    right: 40px; }
+
+.input-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: solid 1px #ccc;
+  border-radius: 5px;
+  padding: 0.4em;
+  margin-top: 1em; }
+  .input-group input {
+    border: none;
+    outline: none; }
+
+.btn {
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 5px;
+  padding: 0.5em;
+  text-align: center;
+  border: none;
+  background: #ccc; }
+
+.btn:hover {
+  opacity: 0.7;
+  transition: 0.5s; }
+
+.btn:not(:enabled) {
+  color: initial;
+  background-color: #eee; }
+
+.btn-primary {
+  background-color: #333;
+  color: #fff; }
+
+.btn-secondary {
+  background-color: coral;
+  color: #fff; }
+
+.message {
+  margin-top: 0.5em;
+  color: #fd3232;
+  text-align: center; }
+
+.rate-selection {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  list-style: none;
+  margin-top: 1em;
+  grid-gap: 10px; }
+  .rate-selection [type="radio"] {
+    display: none; }
+  .rate-selection li {
+    width: 40px;
+    height: 40px;
+    background-color: #eee;
+    color: #333;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    overflow: hidden; }
+  .rate-selection label {
+    display: block;
+    width: 100%;
+    height: 100%; }
+  .rate-selection [type="radio"]:checked ~ label {
+    background-color: coral;
+    color: #fff; }
+
+.about-link {
+  display: block;
+  text-align: right; }
+  .about-link a {
+    color: coral; }
+
+.about {
+  position: relative; }
+  .about h1 {
+    text-align: center;
+    margin-bottom: .5em; }
+  .about .home-link {
+    margin-top: 1em;
+    display: block; }
+    .about .home-link a {
+      color: coral; }

@@ -1,0 +1,203 @@
+.active {
+  color: green
+}
+$bg-light: #fff;
+$bg-dark: #333;
+$primary-color: coral;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: cursive;
+  line-height: 1.2;
+  background-color: $bg-dark;
+  color: $bg-light;
+  position: relative;
+}
+
+.header {
+  text-align: center;
+  color: $primary-color;
+  background-color: #222;
+  padding: 0.7em;
+  position: sticky;
+  top: 0px;
+  z-index: 1000;
+}
+
+.container {
+  width: 90%;
+  max-width: 50rem;
+  margin-inline: auto;
+}
+
+.feedback-stat {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 1em 0 2em 0;
+}
+
+.card {
+  background-color: $bg-light;
+  color: $bg-dark;
+  border-radius: 10px;
+  position: relative;
+  padding: 2em;
+  margin: 1em 0;
+  max-width: 25em;
+  margin-inline: auto;
+
+  .rating {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    font-size: 19px;
+    border: 1px solid #eee;
+    top: -10px;
+    left: -10px;
+    background-color: $primary-color;
+    color: $bg-light;
+    border-radius: 50%;
+    text-align: center;
+  }
+
+  .del-btn, .edit-btn {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    color: $primary-color;
+    position: absolute; 
+    top: 10px;
+    right: 10px;
+  }
+
+  .edit-btn {
+    right: 40px;
+  }
+}
+
+// Feedback Form
+
+.input-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: solid 1px #ccc;
+  border-radius: 5px;
+  padding: 0.4em;
+  margin-top: 1em;
+
+  input {
+    border: none;
+    outline: none;
+  }
+}
+
+// Button Styles
+.btn {
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 5px;
+  padding: 0.5em;
+  text-align: center;
+  border: none;
+  background: #ccc;
+}
+
+.btn:hover {
+  opacity: 0.7;
+  transition: 0.5s;
+}
+
+.btn:not(:enabled) {
+  color: initial;
+  background-color: #eee;
+}
+
+.btn-primary {
+  background-color: $bg-dark;
+  color: $bg-light;
+}
+
+.btn-secondary {
+  background-color: $primary-color;
+  color: $bg-light;
+}
+
+.message {
+  margin-top: 0.5em;
+  color: #fd3232;
+  text-align: center;
+}
+
+.rate-selection {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  list-style: none;
+  margin-top: 1em;
+  grid-gap: 10px;
+
+  [type="radio"] {
+    display: none;
+  }
+
+  & li {
+    width: 40px;
+    height: 40px;
+    background-color: #eee;
+    color: $bg-dark;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    overflow: hidden;
+  }
+
+  label {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+
+  [type="radio"]:checked ~ label {
+    background-color: $primary-color;
+    color: $bg-light;
+  }
+}
+
+
+.about-link {
+  display: block;
+  text-align: right;
+  
+  a {
+    color: $primary-color;
+  }
+}
+
+// about page
+
+.about {
+  position: relative;
+  
+  h1 {
+    text-align: center;
+    margin-bottom: .5em;
+  }
+
+  .home-link {
+    margin-top: 1em;
+    display: block;
+
+    a {
+      color: $primary-color;
+    }
+  }
+}
