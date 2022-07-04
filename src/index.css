@@ -25,7 +25,7 @@ body {
 .container {
   width: 90%;
   max-width: 50rem;
-  margin-inline: auto; }
+  margin: auto; }
 
 .feedback-stat {
   display: flex;
