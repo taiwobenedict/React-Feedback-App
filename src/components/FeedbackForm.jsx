@@ -73,7 +73,7 @@ function FeedbackForm() {
       <form onSubmit={submitHandler}>
         <Rating rate={rate} ratingHandler={ratingHandler} />
         <div className="input-group">
-          <input type="text" value={input} onChange={inputHandler} />
+          <input type="text" placeholder="Write your feedback" value={input} onChange={inputHandler} />
           <Button
             type={"submit"}
             version={"primary"}
