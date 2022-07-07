@@ -1,7 +1,6 @@
 import Card from "../shared/Card";
 import Button from "../shared/Button";
 import { useState, useContext, useEffect } from "react";
-import { v4 as uui4 } from "uuid";
 import FeedbackContext from "../context/FeedbackContext";
 
 function FeedbackForm() {
@@ -40,7 +39,6 @@ function FeedbackForm() {
   function submitHandler(e) {
     e.preventDefault();
     const newFeedback = {
-      id: uui4(),
       rating: rate,
       text: input,
     };

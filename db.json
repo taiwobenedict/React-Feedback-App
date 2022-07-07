@@ -1,0 +1,19 @@
+{
+  "feedbacks": [
+    {
+      "rating": 10,
+      "text": "Just have fun with this app",
+      "id": 1
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
