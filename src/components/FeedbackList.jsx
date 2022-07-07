@@ -6,6 +6,15 @@ import { FaTimes, FaEdit } from "react-icons/fa";
 // List of Feedbacks Component
 function FeedbackList() {
   const { feedback } = useContext(FeedbackContext);
+
+  if (feedback.length === 0) {
+    const style = {
+      textAlign: "center"
+    }
+    return (
+      <h2 style={style}>Add New Feedback</h2>
+    )
+  }
   return (
     <>
       {feedback.map((item) => (
